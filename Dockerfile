@@ -1,4 +1,4 @@
-FROM telegraf:1.25
+FROM telegraf:1.26
 
 # Adding non-free repos in order to obtain snmp-mibs-downloader
 RUN echo 'deb http://deb.debian.org/debian bullseye non-free' > /etc/apt/sources.list.d/bullseye-nonfree.list && \
