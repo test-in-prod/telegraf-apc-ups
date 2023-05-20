@@ -1,0 +1,9 @@
+# buildkitd.toml
+debug = true
+[registry."<your private registry>"]
+http = false
+insecure = false
+  ca=["<path to ca root cert>"]
+  [[registry."<your private registry>".keypair]]
+    key="<path to private registry key>"
+    cert="<path to private registry cert>"
